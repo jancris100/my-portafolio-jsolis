@@ -1,14 +1,112 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <!-- Estilos -->
+  <link href="/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/reset.css" />
+  <link rel="stylesheet" href="scroll.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+  <link rel="stylesheet" href="assets/fonts/poppins/poppins.css" />
+
 </head>
+
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+  <!-- LAYOUT PRINCIPAL -->
+  <div class="layout">
+    <!-- ASIDE NAV -->
+    <aside class="layout__aside">
+      <section class="aside__user-info">
+        <!-- INFORMACION GENERAL -->
+        <div class="user-info__general">
+          <div class="user-info__container-image">
+            <img src="assets/img/JAN LINKEDIN.jpeg" class="user-info__image" alt="perfil image" />
+          </div>
+          <h2 class="user-info__name">Jan Chris</h2>
+          <h4 class="user-info__job">Desarrollador de software</h4>
+        </div>
+        <!-- MENU DE NAVEGACION -->
+        <nav class="user-info__menu">
+
+          <ul class="menu__list">
+
+            <li class="menu__option">
+              <a href="index.html" class="menu__link">
+                <i class="menu__icon fa-solid fa-house"></i>
+                <span class="menu__overlay">Home</span>
+              </a>
+            </li>
+
+            <li class="menu__option">
+              <a href="pages/about_me.html" class="menu__link">
+                <i class="menu__icon fa-solid fa-user"></i>
+                <span class="menu__overlay">About me</span>
+              </a>
+            </li>
+
+            <li class="menu__option">
+              <a href="pages/curriculum.html" class="menu__link">
+                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                <span class="menu__overlay">Curriculum</span>
+              </a>
+            </li>
+
+            <li class="menu__option">
+              <a href="projects.html" class="menu__link">
+                <i class="menu__icon fa-solid fa-briefcase"></i>
+                <span class="menu__overlay">Projects</span>
+              </a>
+            </li>
+
+            <li class="menu__option">
+              <a href="skills.html" class="menu__link">
+                <i class="menu__icon fa-solid fa-book"></i>
+                <span class="menu__overlay">Blog</span>
+              </a>
+            </li>
+
+            <li class="menu__option">
+              <a href="contact.html" class="menu__link">
+                <i class="menu__icon fa-solid fa-envelope"></i>
+                <span class="menu__overlay">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- LINKS DE REDES SOCIALES -->
+        <div class="user-info__links">
+          <ul class="links__social">
+            <li class="social__options">
+              <a href="https://www.linkedin.com/in/jan-solis-44588212b/" target="_blank" class="social__option">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- BOTON CV -->
+        <div class="user-info__button">
+          <a href="q" class="user-info__btn">Descargar CV</a>
+        </div>
+        <!-- ASIDE FOOTER -->
+        <footer class="user-info__footer">&copy; 2025 Jan Chris Solís</footer>
+      </section>
+    </aside>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="layout__content">
+      <section class="content__page">
+        <h1 class="page__name">Hey &#128075 I'm Jan Solis</h1>
+        <h2 class="page__job"> <span class="typed" id="cadenas-texto"></span> </h2>
+        <img class="page__img" src="assets/img/hero-devices.svg" alt="">
+      </section>
+    </main>
+  </div>
 </body>
+<!-- CONTENIDO PRINCIPAL -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="scripts/typed-effect.js"></script>
+
 </html>
